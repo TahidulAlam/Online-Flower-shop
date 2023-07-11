@@ -18,7 +18,7 @@ body {
     padding: 15px 35px;
 }
 
-.section-title,.review-title  {
+.section-title {
     color: #181818c9;
     text-align: center;
     font-size: 35px;
@@ -339,7 +339,7 @@ main {
     background: #FFF;
     border: none;
 }
-.all-review{
+.all-review-card{
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -353,6 +353,7 @@ main {
     padding: 20px;
     text-align: center;
 }
+
 /* footer style */
 footer {
     display: flex;
