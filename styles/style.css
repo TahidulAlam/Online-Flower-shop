@@ -34,12 +34,41 @@ body {
 
 /* header related styles */
 .header {
-    background-color:rgba(229, 84, 115, 0.1);
-    
+    background-color: rgba(229, 84, 115, 0.1);
+}
+.header-nav{
+    margin-left: 130px;
+    margin-top: 30px;
+}
+.header-nav,.nav-ul{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    justify-items: baseline;
+    align-items: baseline;
+}
+.nav-ul-li{
+    list-style: none;
+    white-space: nowrap;
+    margin-right:30px;
+}
+
+.nav-logo{
+    margin: 0;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.nav-ul-li>a{
+    font-size: 20px;
+    bottom: 0;
+    text-decoration:none;
+    color: #181818;
+    font-family: Lato;
 }
 
 .banner {
-    padding: 30px 30px 0px 150px;
+    padding: 30px 100px 0px 150px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -66,7 +95,8 @@ body {
     margin-bottom: 20px;
     color: rgba(39, 39, 39, 1);
 }
-.banner-description{
+
+.banner-description {
     color: rgba(39, 39, 39, 0.60);
     font-family: Lato;
     font-size: 14px;
@@ -78,22 +108,29 @@ body {
 
 /* main section styles */
 main {
-    max-width: 1140px;
-    margin: 0 auto;
+    max-width: 100%;
 }
 
-main section {
+.section-content-one,
+.section-content-two,
+.section-content-four,
+.section-content-five {
+    max-width: 1140px;
+    margin: 0 auto;
     margin-top: 130px;
 }
-.section-content-one{
+
+.section-content-one {
     width: 100%;
     margin: auto;
     margin-top: 130px;
 }
-.section-header-text{
+
+.section-header-text {
     text-align: center;
 }
-.section-text{
+
+.section-text {
     color: rgba(39, 39, 39, 0.60);
     text-align: center;
     font-family: Lato;
@@ -102,41 +139,48 @@ main section {
     font-weight: 400;
     line-height: 30px;
 }
-.all-flower{
+
+.all-flower {
     width: 100%;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     gap: 10px;
 }
-.flower-one{
+
+.flower-one {
     width: 33%;
     height: auto;
     text-align: center;
     text-decoration: underline;
 }
-.flower-tow{
+
+.flower-tow {
     width: 33%;
     height: auto;
     text-align: center;
     text-decoration: underline;
 
 }
-.flower-three{
+
+.flower-three {
     width: 33%;
     height: auto;
     text-align: center;
     text-decoration: underline;
 }
-.img-one{
+
+.img-one {
     width: 65%;
     margin: auto;
     margin-bottom: 0;
 }
-.img-tow{
+
+.img-tow {
     width: 65%;
     margin: auto;
 }
-.flower-text{
+
+.flower-text {
     color: #272727;
     text-align: center;
     font-family: Lato;
@@ -146,6 +190,7 @@ main section {
     line-height: 35px;
     text-decoration-line: underline;
 }
+
 .flower-img-one {
     display: flex;
     height: 415px;
@@ -153,37 +198,45 @@ main section {
     background-color: rgba(167, 33, 98, 0.15);
     border-radius: 300px 300px 0px 0px;
 }
-.flower-img-tow{
+
+.flower-img-tow {
     display: flex;
     height: 415px;
     justify-content: center;
-    background-color:rgba(5, 151, 160, 0.15);
+    background-color: rgba(5, 151, 160, 0.15);
     border-radius: 300px 300px 0px 0px;
 }
-.flower-img-three{
+
+.flower-img-three {
     display: flex;
     height: 415px;
     justify-content: center;
-    background-color:  rgba(71, 125, 17, 0.15);
+    background-color: rgba(71, 125, 17, 0.15);
     border-radius: 300px 300px 0px 0px;
 }
-.all-category{
+
+.all-category {
     padding: 35px;
     width: 80%;
     margin: auto;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     gap: 10px;
     border-radius: 8px;
     background: rgba(39, 39, 39, 0.05);
 }
-.category-one,.category-tow,.category-three{
+
+.category-one,
+.category-tow,
+.category-three {
     text-align: center;
 }
-.text-color{
+
+.text-color {
     color: rgba(229, 84, 115, 1);
 }
-.text-style-two{
+
+.text-style-two {
     color: rgba(39, 39, 39, 0.80);
     text-align: center;
     font-family: Lato;
@@ -192,23 +245,33 @@ main section {
     font-weight: 600;
     line-height: 35px;
 }
-.deal-category{
+
+.deal-category {
     width: 80%;
     margin: auto;
     display: flex;
     justify-content: center;
 }
-.insta-section-header{
+
+.section-content-three {
+    background-color: rgba(229, 84, 115, 0.1);
+    width: 100%;
+    margin-top: 130px;
+}
+
+.insta-section-header {
     text-align: center;
 }
-.deal-category-one{
+
+.deal-category-one {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-.deal-text{
+
+.deal-text {
     color: rgba(39, 39, 39, 0.60);
     text-align: center;
     font-family: Lato;
@@ -217,17 +280,20 @@ main section {
     font-weight: 400;
     line-height: 30px;
 }
-.insta-category{
+
+.insta-category {
     width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
-    gap:10px;
+    gap: 10px;
 }
-.insta-img{
-width: 100%;
+
+.insta-img {
+    width: 100%;
 }
-.insta-text{
+
+.insta-text {
     color: rgba(39, 39, 39, 0.60);
     text-align: center;
     font-family: Lato;
@@ -236,7 +302,8 @@ width: 100%;
     font-weight: 400;
     line-height: 30px;
 }
-.latest-deal{
+
+.latest-deal {
     background-image: url(../images/Rectangle\ 9.png);
     height: 352px;
     background-repeat: no-repeat;
@@ -246,7 +313,8 @@ width: 100%;
     align-items: center;
     justify-content: center;
 }
-.latest-deal>h1{
+
+.latest-deal>h1 {
     color: #272727;
     text-align: center;
     font-family: Lato;
@@ -256,7 +324,8 @@ width: 100%;
     line-height: normal;
     margin: 0;
 }
-.latest-deal>p{
+
+.latest-deal>p {
     color: rgba(39, 39, 39, 0.60);
     padding-bottom: 15px;
     text-align: center;
@@ -267,13 +336,14 @@ width: 100%;
     line-height: 30px;
 }
 
-.subscribe-email input[type="email"]{
+.subscribe-email input[type="email"] {
     width: 550px;
     height: 48px;
     border-radius: 8px;
     background: #FFF;
     border: none;
 }
+
 /* footer style */
 footer {
     display: flex;
@@ -282,7 +352,8 @@ footer {
     margin-top: 100px;
     padding: 130px 200px;
 }
-.footer-content{
+
+.footer-content {
     color: white;
     height: 100px;
     width: 100%;
@@ -292,16 +363,18 @@ footer {
     align-items: center;
     justify-content: center;
 }
-.footer-text-one{
+
+.footer-text-one {
     color: rgba(255, 255, 255, 0.90);
-    text-align:center;
+    text-align: center;
     font-family: Lato;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
 }
-.footer-text-two{
+
+.footer-text-two {
     color: rgba(255, 255, 255, 0.40);
     text-align: center;
     font-family: Lato;
